@@ -1,0 +1,173 @@
+
+.wrapper {
+    max-width: 300px;
+    background-color: transparent;
+    margin: auto; /* Margin shorthand for vertical and horizontal centering */
+    position: absolute; /* Use absolute positioning for centering */
+    top: 50%; /* Move the top edge to the vertical center */
+    left: 0; /* Align the left edge with the left side of the container */
+    right: 0; /* Align the right edge with the right side of the container */
+    transform: translateY(-50%); /* Adjust to center based on height */
+    z-index: 2;
+    overflow: hidden;
+    /*****************************************************/
+    /********************* LOGIN FORM ********************/
+    /*****************************************************/
+  }
+  .wrapper .login, .wrapper .register {
+    padding-top: 50px;
+    width: 100%;
+  }
+  .wrapper .login .profile, .wrapper .register .profile {
+    height: 100px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  .wrapper .login .profile i, .wrapper .register .profile i {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper .login .form-element, .wrapper .register .form-element {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  }
+  .wrapper .login .form-element span, .wrapper .register .form-element span {
+    display: inline-block;
+    width: 20%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .wrapper .login .form-element input, .wrapper .register .form-element input {
+    font-family: "Fira Sans", sans-serif;
+    display: inline-block;
+    width: 80%;
+    margin: 20px 0 0 0;
+    padding: 10px 10px 10px 20px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .wrapper .login .form-element input::-moz-placeholder, .wrapper .register .form-element input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .wrapper .login .form-element input:-ms-input-placeholder, .wrapper .register .form-element input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .wrapper .login .form-element input::placeholder, .wrapper .register .form-element input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .wrapper .login button, .wrapper .register button {
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  .login button:hover
+  {
+    color:#323232;
+    background: #fff;
+  }
+  .wrapper .login .profile svg, .wrapper .register .profile i {
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 320%;
+}
+  
+  .login-view-toggle {
+    color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    text-align: center;
+  }
+  .login-view-toggle a {
+    color: white;
+  }
+  
+  
+  .login.up .form-element {
+    top: -200px;
+    opacity: 0;
+  }
+
+  
+  
+ 
+  
+  @media screen and (max-width: 480px) {
+    .wrapper .login .profile {
+      height: 80px;
+      width: 80px;
+      margin-bottom: 40px;
+    }
+  }
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes move-top {
+    0% {
+      top: calc(100vh - 30px);
+    }
+    100% {
+      top: 20px;
+    }
+  }
+  @keyframes move-top {
+    0% {
+      top: calc(100vh - 30px);
+    }
+    100% {
+      top: 20px;
+    }
+  }
+  @-webkit-keyframes move-bottom {
+    0% {
+      top: 20px;
+    }
+    100% {
+      top: calc(100vh - 30px);
+    }
+  }
+  @keyframes move-bottom {
+    0% {
+      top: 20px;
+    }
+    100% {
+      top: calc(100vh - 30px);
+    }
+  }
